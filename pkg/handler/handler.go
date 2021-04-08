@@ -34,7 +34,7 @@ func init() {
 	go dspr.DisPatch(workQueueChan)
 }
 
-// 获取 ID
+// 发送数据
 func SendData(c *gin.Context) {
 	var eqpStatus param.EqpStatus
 	if err := c.ShouldBindJSON(&eqpStatus); err != nil {
